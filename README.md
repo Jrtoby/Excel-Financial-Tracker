@@ -32,13 +32,13 @@ It helps record daily transactions (income & expenses), calculate balances, and 
 Overview
 
 ![](Monthly_Statistics.png)
-Monthly Analysis
+Monthly Analysis( Highlighting descriptions both Expenses and income within a specific month.
 
 ![](Income.png)
-Income overview
+Income overview( Highlighting descriptions of the Savings and month.
 
 ![](Expense.png)
-Expenses Overview
+Expenses Overview( Highlighting descriptions of the spending and month. 
 
 ---
 
