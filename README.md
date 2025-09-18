@@ -1,4 +1,4 @@
-# Excel-Financial-Tracker
+# Excel-Financial-Tracker / Project-Tracker
 ![](Intro_Image.jpg)
 
 ## 📌 Project Overview
@@ -64,3 +64,73 @@ Encourages data-driven decision making in personal finance, the same way busines
 
 ## 📂 Files
 - Financial_Tracker.xlsx → Excel file with transaction log & dashboard
+
+---
+
+### 📊 Excel Project Tracker
+
+This Excel Project Tracker is a milestone based system for monitoring project tasks. It combines binary values, formulas, and visual indicators to provide a clear view of task progress across different stages.
+
+---
+
+## 🔹 Structure
+
+- Task ID & Task Name: Unique identifier and description of each task.  
+- Milestone Columns (Drafted → Approved):  
+  - Uses binary indicators → 1 = Completed, 0 = Not Completed.  
+  - Conditional formatting replaces the numbers with:
+    - ✅ (checkmark) for 1  
+    - ❌ (cross mark) for 0  
+- To Do %: Shows the proportion of unfinished stages.  
+- Completed %: Shows the proportion of finished stages.  
+
+---
+
+## 🔹 Formula Logic
+
+The Completed % is calculated by counting how many stages are marked with 1:
+
+``=COUNTIF(C9:G9,1)/5``
+`C9:G9 → The range of the five milestone columns for each task.
+
+`COUNTIF(...,1) → Counts how many milestones are completed.
+
+/5 → Divides by the total number of milestones (5) to return a percentage.
+
+
+**Examples**:
+
+If a task has 3 milestones completed → 3/5 = 60% and If all milestones are completed → 5/5 = 100%.
+
+The To Do % is the inverse of Completed:
+
+``=1 - (COUNTIF(C9:G9,1)/5)``
+
+---
+
+🔹 Visualization
+
+Icon Sets:
+
+✅ Checkmark for completed stages (1) and ❌ Cross for pending stages (0).
+
+Data Bars:
+
+Green bars for Completed % and Red bars for To Do %.
+
+![](Project_Tracker.png)
+Overview
+
+---
+
+🔹 Insights
+
+- Provides a milestone-based breakdown of progress per task, combines numeric (percentages) with visual clarity (icons + data bars).
+
+- Enables project managers to quickly identify:
+
+Tasks at risk of delay.
+
+Bottlenecks in workflow.
+
+Overall project progress.
