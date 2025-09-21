@@ -1,4 +1,4 @@
-# Excel-Financial-Tracker / Project-Tracker
+# Excel-Financial / Project-Tracker
 ![](Intro_Image.jpg)
 
 ## 📌 Project Overview
@@ -8,13 +8,13 @@ It helps record daily transactions (income & expenses), calculate balances, and 
 ---
 
 ## 🛠 Features
-**- Transaction Table**
+1:**Transaction Table**
   - Columns: Date, Time, Description, Type (Income/Expense), Amount, Signed, Balance
-  - Applied Data validation with list of Descriptions and also an input message to ensure clean enteries.(e.g choose descriptions from the drop-down), did the same for Type(Income or Expenses) and Amount (input Degits only). 
-**- Running Balance**
+  - Applied Data validation with list of Descriptions and also an input message to ensure a clean entry. (e.g choose descriptions from the drop-down), did the same for Type(Income or Expenses) and Amount (input Degits only). 
+2:**Running Balance**
   - Automatically updates to + or - value once expenses or income is selected from the type drop-down, signed amounts (Income = +, Expense = -) using ``=IF(N2="Income",M2, -M2)``
   - Automatically updates the Balance using ``=P2+O3`` (P=Balance, O=Signed).
-**- PivotTables & Charts**
+3:**PivotTables & Charts**
   - Income vs Expense by month
   - Income/Expenses breakdown by Description
   - Monthly trend of balances
